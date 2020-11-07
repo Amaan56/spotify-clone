@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.header__avatar {
+  display: flex;
+  align-items: center;
+}
+
+.header__avatar > h4 {
+  margin-left: 1rem;
+}
+
+.header__search {
+  flex: 0.5;
+  color: grey;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  min-width: 100px;
+}
+
+.header__searchInput {
+  border: none;
+  width: 100%;
+}
+
+.header__searchInput:focus {
+  outline: none;
+}

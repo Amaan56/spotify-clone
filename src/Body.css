@@ -1,0 +1,63 @@
+.body {
+  height: 100vh;
+  flex: 0.8;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+  background-color: rgb(91, 87, 115);
+  color: white;
+  padding: 30px;
+  width: 100%;
+  overflow-y: overlay;
+}
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.body__songs {
+  z-index: 1;
+  /* margin: 0 -30px; */
+}
+.body__discoverWeekly {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.body__discoverWeekly > img {
+  height: 35vh;
+  margin: 0 20px;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+.body__discoverWeeklyInfo {
+  flex: 1;
+}
+
+.body__discoverWeeklyInfo > h2 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+.body__discoverWeeklyInfo > p {
+  font-size: 14px;
+}
+
+.body__icons {
+  display: flex;
+  align-items: center;
+}
+
+.body__icons > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+
+.body__shuffle {
+  font-size: 80px !important;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.body__shuffle:hover {
+  transition: 100ms transform ease-in;
+  transform: scale(1.08);
+}
