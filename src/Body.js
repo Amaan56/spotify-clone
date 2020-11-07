@@ -9,7 +9,6 @@ import SongRow from './SongRow';
 
 function Body() {
   const [{ discoverWeekly }, dispatch] = useDataLayerValue();
-  console.log(discoverWeekly);
   return (
     <div className="body">
       <Header />
@@ -28,7 +27,7 @@ function Body() {
           <MoreHorizIcon />
         </div>
         {discoverWeekly?.tracks.items.map((item) => {
-          return <SongRow track={item.track} />;
+          return <SongRow key={item.uri} track={item.track} />;
         })}
       </div>
     </div>
